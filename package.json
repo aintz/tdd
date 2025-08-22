@@ -43,7 +43,16 @@
   },
   "eslintConfig": {
     "extends": [
-      "./node_modules/standard/eslintrc.json"
-    ]
+      "./node_modules/standard/eslintrc.json",
+      "plugin:react/jsx-runtime"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
   }
 }

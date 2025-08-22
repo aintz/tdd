@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import { evaluate } from 'mathjs'
+import { useState } from 'react'
 import React from 'react'
 
 export const operations = ['+', '-', '*', '/']
@@ -7,7 +7,7 @@ const equalSign = '='
 
 export const rows = [[7, 8, 9], [4, 5, 6], [1, 2, 3], [0]]
 
-export const Calculator = () => {
+export default function Calculator () {
   const [value, setValue] = useState('')
 
   const createHandleClick = (op) => () => setValue(value.concat(op))
