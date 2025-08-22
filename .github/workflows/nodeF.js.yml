@@ -15,4 +15,7 @@ jobs:
     steps:
       - name: 'Hello World'
         run: echo 'Hello World'
-      
+      - name: 'test fecha'
+        run: date
+      - name: 'contenido del directorio'
+        run: ls -la

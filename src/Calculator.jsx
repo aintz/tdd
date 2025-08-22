@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { evaluate } from 'mathjs'
+import React from 'react'
 
 export const operations = ['+', '-', '*', '/']
 const equalSign = '='
