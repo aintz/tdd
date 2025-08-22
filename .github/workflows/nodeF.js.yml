@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5
-      - name: 'Hello World'
-        run: echo 'Hello Pepe'
-      - name: 'test fechaa'
-        run: date
-      - name: 'contenido del directorio'
-        run: ls -la
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: npm ci --legacy-peer-deps
+      - run: npm run build
