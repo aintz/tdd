@@ -15,8 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: 'Hello World'
-        run: echo 'Hello World'
-      - name: 'test fecha'
+        run: echo 'Hello Pepe'
+      - name: 'test fechaa'
         run: date
       - name: 'contenido del directorio'
         run: ls -la
