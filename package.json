@@ -8,7 +8,7 @@
     "build": "vite build",
     "dev": "vite",
     "test": "vitest",
-    "lint": "eslint .",
+    "lint": "standard",
     "coverage": "vitest run --coverage"
   },
   "keywords": [],
@@ -32,11 +32,11 @@
     "vite": "^7.1.2"
   },
   "dependencies": {
+    "happy-dom": "^18.0.1",
     "mathjs": "^14.6.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "vitest": "^3.2.4",
-    "happy-dom": "^18.0.1"
+    "vitest": "^3.2.4"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "4.9.5"
